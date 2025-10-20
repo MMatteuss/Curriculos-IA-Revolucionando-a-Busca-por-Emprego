@@ -18,7 +18,7 @@ app.config['UPLOAD_FOLDER'] = 'uploads'
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16MB
 
 # Configuração do Gemini - com verificação
-GEMINI_API_KEY = os.getenv('GEMINI_API_KEY', 'AIzaSyAKjdtiVdeAY3j3ppZX9sApo_aCqaxUem8')
+GEMINI_API_KEY = os.getenv('GEMINI_API_KEY', 'SUA CHAVE')
 
 # Verificar se a API key está disponível
 if not GEMINI_API_KEY:
