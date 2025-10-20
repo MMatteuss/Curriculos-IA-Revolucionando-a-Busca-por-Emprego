@@ -1,0 +1,8 @@
+flask
+google-generativeai
+PyPDF2
+python-docx
+pandas
+werkzeug
+mysql-connector-python
+python-dotenv

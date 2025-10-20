@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículos IA - Currículos IA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/depoimento.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-robot"></i>
+                    <span>Currículos IA</span>
+                </a>
+                <div class="nav-links">
+                    <a href="index.html">Início</a>
+                    <a href="index.html#features">Recursos</a>
+                    <a href="index.html#how-it-works">Como Funciona</a>
+                    <a href="index.html#demo">Demonstração</a>
+                    <a href="depoimentos.html">Depoimentos</a>
+                </div>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Depoimentos de Usuários</h1>
+                <p>Veja o que nossos usuários estão dizendo sobre como o Currículos IA transformou suas buscas por emprego</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="section-title">
+                <h2>Experiências Reais</h2>
+                <p>Conheça histórias de pessoas que alcançaram seus objetivos profissionais com nossa plataforma</p>
+            </div>
+
+            <!-- Testimonials Grid -->
+            <div class="testimonials-grid" id="testimonials-container">
+                <!-- Testimonials will be loaded here by JavaScript -->
+            </div>
+
+            <!-- Form Section -->
+            <div class="form-section">
+                <div class="section-title">
+                    <h2>Compartilhe Sua Experiência</h2>
+                    <p>Nos conte como o Currículos IA ajudou você em sua jornada profissional</p>
+                </div>
+
+                <form class="testimonial-form" id="testimonial-form">
+                    <div class="form-group">
+                        <label for="name">Seu Nome</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="profession">Sua Profissão/Cargo</label>
+                        <input type="text" id="profession" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rating">Avaliação</label>
+                        <div class="rating-input">
+                            <span class="rating-star" data-value="1">★</span>
+                            <span class="rating-star" data-value="2">★</span>
+                            <span class="rating-star" data-value="3">★</span>
+                            <span class="rating-star" data-value="4">★</span>
+                            <span class="rating-star" data-value="5">★</span>
+                        </div>
+                        <input type="hidden" id="rating" value="0" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="testimonial">Seu Depoimento</label>
+                        <textarea id="testimonial" class="form-control" placeholder="Compartilhe sua experiência com o Currículos IA..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <span>Enviar Depoimento</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+
+                    <div class="form-footer">
+                        <p>Seu depoimento será revisado antes de aparecer na página principal.</p>
+                    </div>
+                </form>
+                    <br><center>
+                    <a type="button" class="submit-btn" href="index.html">
+                        <span>Voltar</span>
+                    </a></center>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Currículos IA</h3>
+                    <p>Revolucionando a maneira como as pessoas encontram emprego através da inteligência artificial.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="index.html#features">Recursos</a></li>
+                        <li><a href="index.html#how-it-works">Como Funciona</a></li>
+                        <li><a href="index.html#demo">Demonstração</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Suporte</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Central de Ajuda</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Currículos IA. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/depoimento.js"></script>
+</html>

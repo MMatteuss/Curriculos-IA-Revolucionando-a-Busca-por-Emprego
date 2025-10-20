@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisar Currículo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h1 class="text-center mb-4">Analisar Currículo</h1>
+                
+                {% if error %}
+                <div class="alert alert-danger">{{ error }}</div>
+                {% endif %}
+                
+                <form method="POST" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="curriculo" class="form-label">Seu Currículo (PDF ou DOCX)</label>
+                        <input type="file" class="form-control" id="curriculo" name="curriculo" accept=".pdf,.docx" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="email_key" class="form-label">Chave do App de Email</label>
+                        <input type="password" class="form-control" id="email_key" name="email_key" required>
+                        <div class="form-text">Chave de API para disparo de emails</div>
+                    </div>
+                    
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-lg">Analisar com IA</button>
+                    </div>
+                </form>
+                
+                <div class="mt-4">
+                    <a href="{{ url_for('index') }}" class="btn btn-secondary">Voltar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
